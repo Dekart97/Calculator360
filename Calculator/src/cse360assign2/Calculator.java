@@ -18,22 +18,26 @@ public class Calculator {
 	
 	// This method takes the parameter and adds it to the total
 	public void add (int value) {
-		
+		total = total + value;
 	}
 	
 	// This method takes the parameter and subtracts it from the total
 	public void subtract (int value) {
-		
+		total = value - total;
 	}
 	
 	// This method takes the parameter and multiplies it to the total
 	public void multiply (int value) {
-		
+		total = value*total;
 	}
 	
 	// This method takes the total and divides by the parameter
 	public void divide (int value) {
-		
+		if (value != 0){
+            total = total/value;
+		}else{
+		    total = 0;
+		}
 	}
 	
 	// This method gets the history of the calculator
